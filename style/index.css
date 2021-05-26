@@ -6,3 +6,8 @@ p {
 	font-family: "Comic Sans MS", "Comic Sans";
 	color: #ccc
 }
+
+button {
+	background-color: #20c020;
+	padding: 15px 32px;
+}
