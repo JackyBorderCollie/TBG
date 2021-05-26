@@ -1,13 +1,19 @@
 body {
 	background-color: #444;
+	padding: 10px;
 }
 
 p {
 	font-family: "Comic Sans MS", "Comic Sans";
-	color: #ccc
+	color: #ccc;
+	font-size: 14pt;
 }
 
 button {
-	background-color: #20c020;
-	padding: 15px 32px;
+    background-color: #1010ff;
+    color: #ddd;
+    padding: 15px 32px;
+    border-width: 0;
+    font-family: "Comic Sans MS";
+    font-size: 16pt;
 }
