@@ -9,6 +9,7 @@
 <p>This is a simple tool that generates a random number just like when rolling a dice. You can change the highest number bellow!</p>
 
 <p>Highest number <input type="number" id="maxnum" value="6"></p>
+<p>Amount of dice <input type="number" id="dies" value="1"></p>
 
 <button onclick="roll()">Generate!</button>
 
@@ -17,8 +18,13 @@
 <script>
 function roll() {
 	var x = document.getElementById("maxnum").value;
-	document.getElementById("diceresult").innerHTML =
-	Math.floor(Math.random() * x) + 1;
+	var max = document.getElementById("dies").value;
+	var list = [];
+	for (var i = 0; i > max; i++) {
+		list.push(Math.floor(Math.random() * x) + 1);
+	}
+	document.getElementById("diceresult").innerHTML = list.join(", ")
+	
 }
 </script>
 <p>Tool made by JackyBorderCollie.</p>
