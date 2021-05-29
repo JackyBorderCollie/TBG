@@ -20,7 +20,7 @@ function roll() {
 	var x = document.getElementById("maxnum").value;
 	var max = document.getElementById("dies").value;
 	var list = [];
-	for (var i = 0; i > max; i++) {
+	for (var i = 0; i < max; i++) {
 		list.push(Math.floor(Math.random() * x) + 1);
 	}
 	document.getElementById("diceresult").innerHTML = list.join(", ")
